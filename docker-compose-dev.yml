@@ -1,0 +1,9 @@
+version: '3'
+services:
+    app:
+        build:
+            context: ./frontend
+            target: dev
+        image: vfr-fpl-dev:0.1
+        volumes: 
+            - ./frontend:/app
